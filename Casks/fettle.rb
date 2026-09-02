@@ -1,6 +1,6 @@
 cask "fettle" do
-  version "0.1.1"
-  sha256 "1dfb2672958b9083df6077453feeaa7c457b40921727f3d21f8b619d479da9f4"
+  version "0.1.2"
+  sha256 "e48ed137736d53fc05b5d312254b2176dcece03092a3a7fbd6cac0e2722ae617"
 
   url "https://github.com/mcclowes/homebrew-fettle/releases/download/v#{version}/Fettle-#{version}.zip"
   name "Fettle"
