@@ -14,14 +14,11 @@ macOS review desk for local code changes.
 Run:
 
 ```sh
-brew tap mcclowes/fettle
-brew trust --cask mcclowes/fettle/fettle
 brew install --cask mcclowes/fettle/fettle
 ```
 
-If your Homebrew version doesn't support `brew trust`, omit that line. The
-trust command allows Homebrew to load this cask, as described in the
-[Homebrew command reference](https://docs.brew.sh/Manpage).
+The full cask name grants trust to this cask during installation. See
+[Homebrew's tap trust guide](https://docs.brew.sh/Tap-Trust).
 
 The cask installs `Fettle.app`. Release archives are published in this tap's
 [GitHub releases](https://github.com/mcclowes/homebrew-fettle/releases).
@@ -31,3 +28,10 @@ The cask installs `Fettle.app`. Release archives are published in this tap's
 ```sh
 brew upgrade --cask mcclowes/fettle/fettle
 ```
+
+## Checks
+
+GitHub Actions checks every push and pull request with stable Homebrew on macOS
+26. It checks cask style, runs the strict cask audit, and fetches the release
+archive to verify its checksum. The job checks the current tap checkout and
+doesn't install or launch Fettle.
