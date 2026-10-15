@@ -5,10 +5,10 @@ cask "fettle" do
   url "https://github.com/mcclowes/homebrew-fettle/releases/download/v#{version}/Fettle-#{version}.zip"
   name "Fettle"
   desc "Native review desk for local code changes"
-  homepage "https://fettle.marginalutility.dev"
+  homepage "https://fettle.marginalutility.dev/"
 
-  depends_on macos: :tahoe
   depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "Fettle.app"
 
